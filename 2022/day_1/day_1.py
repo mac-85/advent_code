@@ -23,9 +23,10 @@ def calories():
 # Main function
 def main():
     
+    elf_bags = calories()
     # Part 1
-    print(f"The elf carrying the max amount of calories has a total of: {max(calories())}")
+    print(f"The elf carrying the max amount of calories has a total of: {elf_bags[0]}")
     # Part 2    
-    print(f"The top three of elfs carrying calories have a total of:  {sum(calories()[0:3])}")
+    print(f"The top three of elfs carrying calories have a total of:  {sum(elf_bags[0:3])}")
 
 main()
