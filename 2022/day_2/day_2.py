@@ -1,3 +1,8 @@
+def greetings():
+    print("*********************************************************")
+    print("****** Greetings! We've got your result here below ******")
+    print("*********************************************************\n")
+
 points_system = {
     'A' : 1,
     'B' : 2,
@@ -75,7 +80,8 @@ def p_by_game_intention(data):
     return result
 
 def main():
-    data = my_input()    
+    data = my_input()
+    greetings()  
     print(f"Total of points by shape selected: {p_by_shape(data)}")
     print(f"Total of points by match result: {p_by_score(data)}")
     print(f"Total points: {p_by_shape(data) + p_by_score(data)}")

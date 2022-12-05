@@ -1,3 +1,9 @@
+def greetings():
+    print("*********************************************************")
+    print("****** Greetings! We've got your result here below ******")
+    print("*********************************************************\n")
+
+
 def my_input():
     # Read from input file
     input = open('day_1_input.txt',"r")
@@ -24,6 +30,7 @@ def calories():
 def main():
     
     elf_bags = calories()
+    greetings()
     # Part 1
     print(f"The elf carrying the max amount of calories has a total of: {elf_bags[0]}")
     # Part 2    
